@@ -13,6 +13,8 @@
 		ED2ED4D42A1CF6940074F3EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2ED4D22A1CF6940074F3EB /* Main.storyboard */; };
 		ED2ED4D62A1CF6950074F3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2ED4D52A1CF6950074F3EB /* Assets.xcassets */; };
 		ED2ED4D92A1CF6950074F3EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2ED4D72A1CF6950074F3EB /* LaunchScreen.storyboard */; };
+		ED2ED4E62A1CF8BD0074F3EB /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2ED4E52A1CF8BD0074F3EB /* DataStore.swift */; };
+		ED2ED4E92A1CF8D50074F3EB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2ED4E82A1CF8D50074F3EB /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		ED2ED4D52A1CF6950074F3EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED2ED4D82A1CF6950074F3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED2ED4DA2A1CF6950074F3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2ED4E52A1CF8BD0074F3EB /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		ED2ED4E82A1CF8D50074F3EB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		ED2ED4CB2A1CF6930074F3EB /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				ED2ED4CC2A1CF6940074F3EB /* AppDelegate.swift */,
-				ED2ED4CE2A1CF6940074F3EB /* SceneDelegate.swift */,
-				ED2ED4D02A1CF6940074F3EB /* ViewController.swift */,
-				ED2ED4D22A1CF6940074F3EB /* Main.storyboard */,
-				ED2ED4D52A1CF6950074F3EB /* Assets.xcassets */,
-				ED2ED4D72A1CF6950074F3EB /* LaunchScreen.storyboard */,
-				ED2ED4DA2A1CF6950074F3EB /* Info.plist */,
+				ED2ED4E72A1CF8C40074F3EB /* Models */,
+				ED2ED4E42A1CF89A0074F3EB /* Services */,
+				ED2ED4E12A1CF8740074F3EB /* ViewControllers */,
+				ED2ED4E22A1CF8830074F3EB /* Storyboards */,
+				ED2ED4E02A1CF86B0074F3EB /* App */,
+				ED2ED4E32A1CF88D0074F3EB /* Resources */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		ED2ED4E02A1CF86B0074F3EB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ED2ED4CC2A1CF6940074F3EB /* AppDelegate.swift */,
+				ED2ED4CE2A1CF6940074F3EB /* SceneDelegate.swift */,
+				ED2ED4DA2A1CF6950074F3EB /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ED2ED4E12A1CF8740074F3EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED2ED4D02A1CF6940074F3EB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED2ED4E22A1CF8830074F3EB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ED2ED4D22A1CF6940074F3EB /* Main.storyboard */,
+				ED2ED4D72A1CF6950074F3EB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED2ED4E32A1CF88D0074F3EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED2ED4D52A1CF6950074F3EB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED2ED4E42A1CF89A0074F3EB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED2ED4E52A1CF8BD0074F3EB /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED2ED4E72A1CF8C40074F3EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED2ED4E82A1CF8D50074F3EB /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED2ED4D12A1CF6940074F3EB /* ViewController.swift in Sources */,
+				ED2ED4E62A1CF8BD0074F3EB /* DataStore.swift in Sources */,
+				ED2ED4E92A1CF8D50074F3EB /* Person.swift in Sources */,
 				ED2ED4CD2A1CF6940074F3EB /* AppDelegate.swift in Sources */,
 				ED2ED4CF2A1CF6940074F3EB /* SceneDelegate.swift in Sources */,
 			);
