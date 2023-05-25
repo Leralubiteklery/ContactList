@@ -17,7 +17,7 @@ struct Person {
          "\(name) \(surname)"
     }
     
-    private func getPerson() -> [Person]{
+    static func getContactList() -> [Person]{
         var persons: [Person] = []
         
         let names = DataStore.shared.names.shuffled()
@@ -45,4 +45,9 @@ struct Person {
         
         return persons
     }
+}
+
+enum Contacts: String {
+    case phone = "phone"
+    case email = "tray"
 }
